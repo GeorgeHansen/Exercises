@@ -26,7 +26,8 @@ GROUP BY hotelNo; -- I wonder if there is an easy way to list the hotel name and
 
 INSERT INTO hotel VALUES (6,'Ritzy Biscuit','Copenhagen');
 
-UPDATE room SET price = price * 1.05; -- not sure why its being a bitch. Safe mode. Oh well
+UPDATE room SET price = price * 1.05 WHERE roomNo >=0;
+
 
 DELETE FROM hotel WHERE hotelNO = 6;
 
